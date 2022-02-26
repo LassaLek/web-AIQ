@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AIQ</title>
+</head>
+<body>
+<!--    <h1>Interation: {{ current_iteration }}</h1>
+    <form method="post">
+        <label>Input</label>
+        <button type="submit">0</button>
+    </form>
+    <code>{{ output }}</code>-->
+<h1>Start</h1>
+<form action="/run_test" method="post">
+    <div>
+        <input type="range" id="sample_size" name="sample_size"
+               min="1" max="2000">
+        <label for="sample_size">Sample size</label>
+    </div>
+    <div>
+        <label for="refm">Reference machine:</label>
+
+        <select name="refm" id="refm">
+            <option value="BF">BF</option>
+        </select>
+    </div>
+    <div>
+        <label for="agent">Agent:</label>
+
+        <select name="agent" id="agent">
+            <option value="Manual">Manual</option>
+            <option value="Test">Test</option>
+        </select>
+    </div>
+    <button name="forwardBtn" type="submit">Forward</button>
+</form>
+</body>
+</html>
